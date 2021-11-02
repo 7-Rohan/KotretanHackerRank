@@ -16,27 +16,26 @@ func isBalanced(s string) string {
 		"(": ")",
 	}
 	str := strings.Split(s, "")
-	for i := 0; i < len(str)/2; i++ {
-		switch str[i] {
-		case "{":
-			if str[len(str)-i-1] != match["{"] {
-				return "NO"
-			}
-		case "[":
-			if str[len(str)-i-1] != match["["] {
-				return "NO"
-			}
-		case "(":
-			if str[len(str)-i-1] != match["("] {
-				return "NO"
-			}
+	var wadah []string
+	for i := 0; i < len(str); i++ {
+		_, ok := match[str[i]]
+		if ok {
+			a := str[i]
+			wadah = append(wadah, a)
+		}
+		if str[i] == match[wadah[len(wadah)-1]] {
+			wadah = wadah[:len(wadah)-1]
 		}
 	}
-	return "YES"
+	if len(wadah) == 0 {
+		return "YES"
+	} else {
+		return "NO"
+	}
 }
 
 func Main_balancedBracket() {
-	s := "{[({})]}()"
+	s := "{[({}())]}()"
 	fmt.Println("==============balancedBracket=============")
 	fmt.Println("Input\t: a = ", s)
 	fmt.Println("Output\t: ", isBalanced(s))

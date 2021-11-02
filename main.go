@@ -22,5 +22,16 @@ func main() {
 	// problem.Main_breakingRecords()
 	// problem.Main_subarrayDivision()
 	// problem.Main_divisibleSumPairs()
-	problem.Main_migratoryBirds()
+	// problem.Main_migratoryBirds()
+	// problem.Main_billDivision()
+	// problem.Main_gridChallenge()
+	// problem.Main_recursiveDigitSum()
+	// problem.Main_newYearChaos()
+	// problem.Main_jesseAndCookies()
+	// problem.Main_palindrome()
+	// problem.Main_salesByMatch()
+	// problem.Main_drawingBook()
+	// problem.Main_countingValley()
+	problem.Main_electronicsShop()
+
 }
