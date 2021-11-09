@@ -1,6 +1,8 @@
 package main
 
-import "github.com/7-Rohan/kotretan-hackerrank/problem"
+import (
+	"github.com/7-Rohan/kotretan-hackerrank/problem"
+)
 
 func main() {
 	// problem.Main_LonelyInteger()
@@ -32,6 +34,17 @@ func main() {
 	// problem.Main_salesByMatch()
 	// problem.Main_drawingBook()
 	// problem.Main_countingValley()
-	problem.Main_electronicsShop()
-
+	// problem.Main_electronicsShop()
+	// problem.Main_catsAndAMouse()
+	// problem.Main_pickingNumbers()
+	// problem.Main_climbingTheLeaderboard()
+	// problem.Main_theHurdleRace()
+	// problem.Main_designerPdfViewer()
+	// problem.Main_utopianTree()
+	// problem.Main_angryProfessor()
+	// problem.Main_beautifulDaysAtTheMovies()
+	// problem.Main_viralAdvertising()
+	// problem.Main_circularArrayRotation()
+	// problem.Main_sequenceEquation()
+	problem.Main_jumpingOnTheCloud()
 }
